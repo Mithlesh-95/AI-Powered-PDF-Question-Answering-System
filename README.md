@@ -4,6 +4,14 @@ DocMind AI is a production-ready, enterprise-grade Retrieval-Augmented Generatio
 
 This repository represents the **complete backend service**—architected with FastAPI, LangChain, and Qdrant—along with a responsive React dashboard.
 
+## 🖥️ Screenshots
+
+### Landing Page
+![Landing Page](assets/landing_page.png)
+
+### Research Workspace
+![Research Workspace](assets/workspace.png)
+
 ---
 
 ## 🏗️ Architecture Flow
