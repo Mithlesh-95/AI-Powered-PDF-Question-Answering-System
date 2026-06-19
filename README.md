@@ -21,7 +21,7 @@ The following diagram illustrates the ingestion pipeline and the conversational 
 ```mermaid
 graph TD
     %% Ingestion Pipeline
-    subgraph Ingestion Pipeline (Asynchronous Background Thread)
+    subgraph "Ingestion Pipeline (Asynchronous Background Thread)"
         A[PDF Upload] --> B[PyPDFLoader Page Parsing]
         B --> C[RecursiveCharacterTextSplitter]
         C --> D[OpenRouter / OpenAI text-embedding-3-small]
@@ -29,7 +29,7 @@ graph TD
     end
 
     %% Query Pipeline
-    subgraph Query Execution (FastAPI Endpoint)
+    subgraph "Query Execution (FastAPI Endpoint)"
         F[User Query] --> G[Embed Query]
         G --> H[Cosine Similarity Search with Payload Filters]
         H --> I[Qdrant Matches & Context Retrieval]
