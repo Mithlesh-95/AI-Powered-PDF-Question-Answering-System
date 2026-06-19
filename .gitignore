@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+.venv/
+ENV/
+env/
+active_env/
+
+# Environments (.env files)
+.env
+.env.local
+.env.*.local
+*.env
+!*.env.example
+
+# App-specific runtime paths
+backend/tiktoken_cache/
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/data/*.json
+!backend/data/registry.json
+
+# Node (Frontend)
+node_modules/
+/dist
+/build
+.eslintcache
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.svelte-kit
+.next
+.nuxt
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp

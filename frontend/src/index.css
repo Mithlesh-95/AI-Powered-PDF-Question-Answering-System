@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F3F0E8;
+    color: #050816;
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #050816;
+    color: #F3F0E8;
+  }
+
+  /* Custom minimal brutalist scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F3F0E8;
+    border-left: 2px solid #050816;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #050816;
+    border: 2px solid #F3F0E8;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #E85D04;
+  }
+}
+
+/* Custom Brutalist / Swiss Grid Background overlay */
+.brutalist-grid {
+  background-image: 
+    radial-gradient(circle, rgba(5, 8, 22, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Monospace font settings for large numbers */
+.num-mono {
+  font-family: 'Space Mono', monospace;
+  font-feature-settings: "tnum";
+}
+
+/* Subtle animations */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.35; }
+}
+
+.glow-subtle {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Hide standard root flex constraints from default templates */
+#root {
+  max-width: 100% !important;
+  margin: 0 !important;
+  border: none !important;
+  width: 100% !important;
+  text-align: left !important;
+  min-height: 100vh !important;
+  display: block !important;
+}
