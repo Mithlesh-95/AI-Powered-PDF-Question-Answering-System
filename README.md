@@ -41,9 +41,9 @@ graph TD
 
 ---
 
-## 🛠️ Core Backend Features (Resume Focus)
+## 🛠️ Core Backend Features 
 
-As the sole backend contributor, I architected, implemented, and optimized the core RAG engine and API service layer:
+As a backend contributor, I architected, implemented, and optimized the core RAG engine and API service layer:
 
 *   **FastAPI Asynchronous Gateway (`main.py`):** Implemented a high-performance REST API with modular endpoints, robust CORS configurations, structural Pydantic schemas, and native FastAPI `BackgroundTasks` for non-blocking operations.
 *   **Dynamic Qdrant Vector Integration (`rag_engine.py`):** Designed the dynamic collection initialization and auto-alignment layer. If the vector dimensions of the current embedding model mismatch the existing collection (e.g. switching models), the service automatically performs safe migration.
